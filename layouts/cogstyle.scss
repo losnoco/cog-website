@@ -1,0 +1,55 @@
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-rounded: false;
+
+$primary: rgb(255, 143, 0);
+$secondary: #67614e;
+
+//noinspection CssUnknownTarget
+@import '~bootstrap/scss/bootstrap.scss';
+//noinspection CssUnknownTarget
+@import '~bootstrap-vue/src/index.scss';
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#__nuxt {
+  @extend .h-100;
+}
+
+#__layout {
+  @extend .d-flex;
+  @extend .flex-column;
+}
+
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.25s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.navbar {
+  transform-origin: top center !important;
+  transform-style: preserve-3d;
+}
+
+.navbar-anim-enter-active, .navbar-anim-leave-active {
+  transition: all .5s;
+}
+.navbar-anim-enter, .navbar-anim-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  transform: translateY(-56px);
+  margin-top: -56px;
+}
