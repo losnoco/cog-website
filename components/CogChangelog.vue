@@ -6,22 +6,26 @@
 <script>
 export default {
   name: 'cog-changelog',
-  props: {
-    description: {},
-    url: {}
-  },
+  props: ['item'],
   data() {
     return {
       realDescription: ""
     }
   },
   async fetch() {
-    if (typeof this.description === 'undefined') {
-      const ft = await this.$axios.get(this.url.replace(/f\.losno/g,"balde.losno"))
+    if (typeof this.item.description === 'undefined') {
+      const url = this.item['sparkle:releaseNotesLink']
+      console.log(url)
+      const ft = await this.$axios.get(url.replace(/f\.losno/g,"balde.losno"))
       this.realDescription = ft.data
     } else {
-      this.realDescription = this.description
+      this.realDescription = this.item.description
     }
+  },
+  fetchOnServer: true,
+  fetchDelay: 1500,
+  fetchKey() {
+    return this.url
   }
 }
 </script>

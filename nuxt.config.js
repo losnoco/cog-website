@@ -162,5 +162,7 @@ export default {
     }
   },
 
+  target: 'static'
+
 
 }

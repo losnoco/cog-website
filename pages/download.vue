@@ -13,9 +13,7 @@
         <b-icon-download class="mr-2" />Download <span v-if="index===0"> the latest version</span>
         <span class="text-white-50 pl-2">{{item.enclosure.length |prettyBytes}}</span>
       </b-btn>
-      <client-only>
-        <cog-changelog :description="item.description" :url="item['sparkle:releaseNotesLink']"/>
-      </client-only>
+      <cog-changelog :item="item"/>
     </section>
 
   </div>
