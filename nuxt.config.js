@@ -106,6 +106,10 @@ export default {
         defer: true,
         'data-domain': 'cog.losno.co',
         src: 'https://pl.lopez-snowhill.net/js/plausible.js'
+      },
+      {
+        src: 'https://static.cloudflareinsights.com/beacon.min.js',
+        'data-cf-beacon': JSON.stringify({"token": "74378e08f7cf45dc8a82f3d989f8e6ba"})
       }
     ]
   },
