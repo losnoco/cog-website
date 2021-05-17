@@ -35,7 +35,7 @@ Supported formats
 *   Musepack
 *   WavPack
 *   MIDI
-    *   SoundFont support via [BASSMIDI](http://www.un4seen.com/bass.html).
+    *   SoundFont support via [FluidSynth](https://www.fluidsynth.org/).
     *   FM synthesis via [Nuked OPL3](https://nukeykt.retrohost.net/),
     *   Audio Unit synthesizer support, including Apple's DLSMusicDevice and [Roland Sound Canvas VA](https://www.roland.com/us/products/rc_sound_canvas_va/).
 *   Syntrax
