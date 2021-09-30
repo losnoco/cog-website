@@ -12,7 +12,6 @@
           <b-navbar-nav>
             <b-nav-item to="/features" active-class="active"><b-icon-info-circle-fill class="mr-2" />Features</b-nav-item>
             <b-nav-item to="/download" active-class="active"><b-icon-download class="mr-2" />Download</b-nav-item>
-            <b-nav-item href="https://forum.cog.losno.co"><b-icon-people-fill class="mr-2" />Forum</b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto">
             <b-nav-item href="https://github.com/kode54/cog"><b-icon-github class="mr-2" />GitHub</b-nav-item>

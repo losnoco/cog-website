@@ -22,7 +22,6 @@
       <b-btn-group>
         <b-btn to="/features" variant="info"><b-icon-info-circle-fill class="mr-2" />Features</b-btn>
         <b-btn to="/download" variant="success"><b-icon-download class="mr-2" />Download</b-btn>
-        <b-btn href="https://forum.cog.losno.co" variant="primary"><b-icon-people-fill class="mr-2" />Forum</b-btn>
       </b-btn-group>
       <b-btn-group>
         <b-dropdown right split split-href="https://github.com/kode54/cog" variant="warning">
