@@ -24,11 +24,11 @@
         <b-btn to="/download" variant="success"><b-icon-download class="mr-2" />Download</b-btn>
       </b-btn-group>
       <b-btn-group>
-        <b-dropdown right split split-href="https://github.com/kode54/cog" variant="warning">
+        <b-dropdown right split split-href="https://github.com/losnoco/cog" variant="warning">
           <template slot="button-content">
             <b-icon-github class="mr-2" />GitHub repository
           </template>
-          <b-dropdown-item href="https://git.lopez-snowhill.net/chris/cog">GitLab</b-dropdown-item>
+          <b-dropdown-item href="https://gitlab.com/kode54/cog">GitLab</b-dropdown-item>
           <b-dropdown-item href="https://bitbucket.org/losnoco/cog">BitBucket</b-dropdown-item></b-dropdown>
       </b-btn-group>
       <b-btn-group>

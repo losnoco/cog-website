@@ -14,13 +14,13 @@
             <b-nav-item to="/download" active-class="active"><b-icon-download class="mr-2" />Download</b-nav-item>
           </b-navbar-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="https://github.com/kode54/cog"><b-icon-github class="mr-2" />GitHub</b-nav-item>
+            <b-nav-item href="https://github.com/losnoco/cog"><b-icon-github class="mr-2" />GitHub</b-nav-item>
             <b-nav-item-dropdown
               id="repos.menu"
               toggle-class="repos"
               right
               >
-              <b-dropdown-item href="https://git.lopez-snowhill.net/chris/cog">GitLab</b-dropdown-item>
+              <b-dropdown-item href="https://gitlab.com/kode54/cog">GitLab</b-dropdown-item>
               <b-dropdown-item href="https://bitbucket.org/losnoco/cog">BitBucket</b-dropdown-item>
             </b-nav-item-dropdown>
 
