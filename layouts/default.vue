@@ -50,7 +50,7 @@
       <b-container>
         <b-row>
           <b-col cols="12" md="8">
-            <span class="text-muted">&copy; 2021 <a href="https://kode54.net">Christopher Snowhill</a>. <a href="https://cogx.org/">Originally developed</a> by <a
+            <span class="text-muted">&copy; 2021-2022 <a href="https://kode54.net">Christopher Snowhill</a>. <a href="https://cogx.org/">Originally developed</a> by <a
               href="http://vspader.com/">Vincent Spader</a>.</span>
           </b-col>
           <b-col class="text-right" cols="12" md="4">
