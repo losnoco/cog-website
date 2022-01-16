@@ -13,7 +13,7 @@
         <b-icon-download class="mr-2" />Download <span v-if="index===0"> the latest version</span>
         <span class="text-white-50 pl-2">{{item.enclosure.length |prettyBytes}}</span>
       </b-btn>
-      <cog-changelog :item="item"/>
+      <div v-html="descriptions[index]" class="list-unstyled pt-3"></div>
     </section>
 
   </div>
@@ -43,8 +43,21 @@ export default {
       return dateB - dateA;
     });
 
+    var versions = sorted.slice(0, 15)
+    var descriptions = {}
+
+    for (const [i, v] of versions.entries()) {
+      if ('description' in v) {
+        descriptions[i] = v.description
+      } else {
+        var url = v["sparkle:releaseNotesLink"].replace("https://f.losno.co/cog/","https://cogcdn.cog.losno.co/")
+        descriptions[i] = await context.$axios.$get(url)
+      }
+    }
+
+
     return {
-      versions: sorted.slice(0,15)
+      versions, descriptions
     }
   }
 
