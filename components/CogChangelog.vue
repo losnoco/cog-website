@@ -16,7 +16,7 @@ export default {
     if (typeof this.item.description === 'undefined') {
       const url = this.item['sparkle:releaseNotesLink']
       console.log(url)
-      const ft = await this.$axios.get(url.replace(/f\.losno/g,"balde.losno"))
+      const ft = await this.$axios.get(url)
       this.realDescription = ft.data
     } else {
       this.realDescription = this.item.description

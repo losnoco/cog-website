@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Download Cog</h1>
-    <b-alert show variant="warning">The last version that works reliably on Mac OS X Mountain Lion is version <a href="https://f.losno.co/cog/Cog-3b628c398.zip">1148-g3b628c398</a>.</b-alert>
+    <b-alert show variant="warning">The last version that works reliably on Mac OS X Mountain Lion is version <a href="https://cogcdn.cog.losno.co/Cog-3b628c398.zip">1148-g3b628c398</a>.</b-alert>
 
     <section :id="`v.${item.enclosure['sparkle:version']}`" v-for="(item, index) in versions" :key="index" class="py-2">
       <h2>Version {{item.enclosure["sparkle:version"]}}</h2>
@@ -35,7 +35,7 @@ export default {
     title: "Download Cog",
   },
   async asyncData(context) {
-    let data = await context.$axios.$get("https://balde.losno.co/cog/mercury.xml")
+    let data = await context.$axios.$get("https://cogcdn.cog.losno.co/mercury.xml")
     let result = await parser.parseStringPromise(await data)
 
     let sorted = result.channel.item.sort((a, b) => {

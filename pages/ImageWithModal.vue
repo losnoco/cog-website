@@ -21,7 +21,7 @@ export default {
   props: ['imgKey', 'mode', 'title'],
   computed: {
     source() {
-      return `https://balde.losno.co/cog/screenshots/${this.imgKey}@${this.mode}.png`
+      return `https://cogcdn.cog.losno.co/screenshots/${this.imgKey}@${this.mode}.png`
     }
   }
 }
