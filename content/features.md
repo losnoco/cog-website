@@ -10,6 +10,7 @@ title: Cog features
 *   Shuffle, both albums and tracks
 *   Repeat single track, album or whole playlist
 *   Playback from HTTP(S) sources, both livestreams and hosted files
+*   Graphic equalizer
 
 Supported formats
 -----------------
@@ -28,6 +29,7 @@ Supported formats
 *   AC3
 *   Windows Media Audio
 *   DTS
+*   HDCD
 *   TTA True Audio
 *   TwinVQ
 *   RealAudio
