@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'A free and open source audio player for macOS.'},
       {
         "name": "msapplication-TileColor",
         "content": "#ffffff"
@@ -23,6 +23,50 @@ export default {
       {
         "name": "theme-color",
         "content": "#ffffff"
+      },
+      {
+        "property": "og:url",
+        "content": "https://cog.losno.co/"
+      },
+      {
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "property": "og:title",
+        "content": "Cog"
+      },
+      {
+        "property": "og:description",
+        "content": "A free and open source audio player for macOS."
+      },
+      {
+        "property": "og:image",
+        "content": "https://cog.losno.co/hero.png"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "property": "twitter:domain",
+        "content": "cog.losno.co"
+      },
+      {
+        "property": "twitter:url",
+        "content": "https://cog.losno.co/"
+      },
+      {
+        "name": "twitter:title",
+        "content": "Cog"
+      },
+      {
+        "name": "twitter:description",
+        "content": "A free and open source audio player for macOS."
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://cog.losno.co/hero.png"
       }
     ],
     link: [
