@@ -11,6 +11,9 @@ title: Cog features
 *   Repeat single track, album or whole playlist
 *   Playback from HTTP(S) sources, both livestreams and hosted files
 *   Graphic equalizer
+*   Headphone or speaker virtual surround by HRIR covolution filter
+    *   Uses the [HeSuVi](https://sourceforge.net/projects/hesuvi/) HRIR format, in either WAV or Wavpack float format
+    *   A preset is built-in, but I supply the most useful set of presets [here](https://cogcdn.cog.losno.co/HeSuVi-hrir-basic.zip)
 
 Supported formats
 -----------------
@@ -31,7 +34,7 @@ Supported formats
 *   DTS
 *   HDCD
 *   TTA True Audio
-*   TAK
+*   TAK (Tom's Lossless Audio Kompressor)
 *   Monkey's Audio (APE)
 *   TwinVQ
 *   RealAudio
