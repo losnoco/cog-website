@@ -31,6 +31,8 @@ Supported formats
 *   DTS
 *   HDCD
 *   TTA True Audio
+*   TAK
+*   Monkey's Audio (APE)
 *   TwinVQ
 *   RealAudio
 *   ATRAC3
