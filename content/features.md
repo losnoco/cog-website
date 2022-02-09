@@ -10,6 +10,8 @@ title: Cog features
 *   Shuffle, both albums and tracks
 *   Repeat single track, album or whole playlist
 *   Playback from HTTP(S) sources, both livestreams and hosted files
+    *   Supports Apple's HTTP Live Streaming (HLS) using FFmpeg
+    *   Supports live metadata updates of continuous streaming servers, including Shoutcast, Icecast, Ogg Vorbis comments, and timed ID3v2 packets, where employed by the streamer
 *   Graphic equalizer
 *   Headphone or speaker virtual surround by HRIR covolution filter
     *   Uses the [HeSuVi](https://sourceforge.net/projects/hesuvi/) HRIR format, in either WAV or Wavpack float format
@@ -26,7 +28,7 @@ Supported formats
     *   HE-AACv2
     *   xHE-AAC (USAC)
 *   Apple Lossless (ALAC)
-*   FLAC
+*   FLAC (including OggFLAC)
 *   Ogg Opus
 *   Ogg Vorbis
 *   AC3
