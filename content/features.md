@@ -42,7 +42,10 @@ Supported formats
 *   RealAudio
 *   ATRAC3
 *   Musepack
-*   WavPack
+*   WavPack, including DSD support
+*   Interchange File Format (IFF) including DSDIFF
+*   DSD Stream File (DFF)
+*   Wideband Single-bit Data (WSD)
 *   MIDI
     *   SoundFont support via [BASSMIDI](http://www.un4seen.com/bass.html).
     *   FM synthesis via [Nuked OPL3](https://nukeykt.retrohost.net/),
