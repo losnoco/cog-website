@@ -13,6 +13,7 @@ title: Cog features
     *   Supports Apple's HTTP Live Streaming (HLS) using FFmpeg
     *   Supports live metadata updates of continuous streaming servers, including Shoutcast, Icecast, Ogg Vorbis comments, and timed ID3v2 packets, where employed by the streamer
 *   Graphic equalizer
+*   Spectrum visualization in the toolbar
 *   Headphone or speaker virtual surround by HRIR covolution filter
     *   Uses the [HeSuVi](https://sourceforge.net/projects/hesuvi/) HRIR format, in either WAV or Wavpack float format
     *   A preset is built-in, but I supply the most useful set of presets [here](https://cogcdn.cog.losno.co/HeSuVi-hrir-basic.zip)
