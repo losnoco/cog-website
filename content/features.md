@@ -12,6 +12,8 @@ title: Cog features
 *   Playback from HTTP(S) sources, both livestreams and hosted files
     *   Supports Apple's HTTP Live Streaming (HLS) using FFmpeg
     *   Supports live metadata updates of continuous streaming servers, including Shoutcast, Icecast, Ogg Vorbis comments, and timed ID3v2 packets, where employed by the streamer
+*   CUE Sheet support, including embedded CUE Sheets in several formats
+*   Album artwork per track, both embedded and external, cached per unique image, in JPEG, PNG, GIF, WebP, HEIC, or AVIF format. HEIC requires macOS Mojave, while WebP requires Big Sur.
 *   Graphic equalizer
 *   Spectrum visualization in the toolbar
 *   Headphone or speaker virtual surround by HRIR covolution filter
@@ -39,6 +41,7 @@ Supported formats
 *   TTA True Audio
 *   TAK (Tom's Lossless Audio Kompressor)
 *   Monkey's Audio (APE)
+*   APL (APE Linking File)
 *   TwinVQ
 *   RealAudio
 *   ATRAC3
