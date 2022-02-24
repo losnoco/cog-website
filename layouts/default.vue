@@ -1,7 +1,12 @@
 <template>
   <div class="d-flex flex-column" style="height: 100vh !important;">
+    <b-navbar type="dark" variant="dark" class="shadow">
+      <b-navbar-nav class="text-center mx-auto">
+        <b-nav-text class="text-white">Stand with Ukraine. Будь з Україною!</b-nav-text>
+      </b-navbar-nav>
+    </b-navbar>
     <transition name="navbar-anim">
-      <b-navbar toggleable="md" type="light" variant="light"  fixed="top" v-if="$route.name !== 'index'">
+      <b-navbar toggleable="md" type="light" variant="light" sticky v-if="$route.name !== 'index'">
         <b-navbar-brand to="/" class="text-primary font-weight-bold">
           <img src="/favicon-32x32.png" class="d-inline-block align-top" alt="Cog logo">
           Cog
