@@ -2,7 +2,7 @@
   <div class="d-flex flex-column" style="height: 100vh !important;">
     <b-navbar type="dark" variant="dark" class="shadow">
       <b-navbar-nav class="text-center mx-auto">
-        <b-nav-text class="text-white">Stand with Ukraine. Будь з Україною!</b-nav-text>
+        <b-nav-text class="text-white">Stand with the Ukrainian people! Будьте з українським народом!</b-nav-text>
       </b-navbar-nav>
     </b-navbar>
     <transition name="navbar-anim">
