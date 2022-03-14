@@ -23,7 +23,7 @@ title: Cog features
 Supported formats
 -----------------
 
-*   MP3
+*   MP3 (including free format, up to 640kbps)
 *   WAV
 *   AAC
     *   LC-AAC
