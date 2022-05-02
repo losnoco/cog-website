@@ -2,7 +2,7 @@
   <div>
     <b-jumbotron class="text-center border">
       <template slot="header">
-         <span class="text-primary font-weight-bold"><img style="height: 70px;vertical-align: sub;" src="/apple-icon-76x76.png" srcset="/apple-icon-76x76.png 1x, /apple-icon-152x152.png 2x" alt="Cog icon"> Cog</span>
+         <span class="text-primary font-weight-bold"><img style="height: 70px;vertical-align: sub;" src="/android-chrome-192x192.png" alt="Cog icon"> Cog</span>
       </template>
       <template slot="lead">
         A free and open source audio player for macOS.
