@@ -3,8 +3,8 @@
     <h1>Download Cog</h1>
     <b-alert show variant="warning">The last version that works reliably on Mac OS X Mountain Lion is version <a href="https://cogcdn.cog.losno.co/Cog-3b628c398.zip">1148-g3b628c398</a>.</b-alert>
 
-    <section :id="`v.${item.enclosure['sparkle:version']}`" v-for="(item, index) in versions" :key="index" class="py-2">
-      <h2>Version {{item.enclosure["sparkle:version"]}}</h2>
+    <section :id="`v.${item['sparkle:version']?item['sparkle:version']:item.enclosure['sparkle:version']}`" v-for="(item, index) in versions" :key="index" class="py-2">
+      <h2>Version {{item["sparkle:version"]?item["sparkle:version"]:item.enclosure["sparkle:version"]}}</h2>
       <p class="pt-3">
         Published on {{ $moment(item.pubDate).format("LLLL") }}. <br/>
         <!-- Supports macOS version {{item["sparkle:minimumSystemVersion"]}} and newer. -->
