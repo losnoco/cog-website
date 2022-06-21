@@ -39,6 +39,9 @@
           <donation-links/>
         </b-dropdown>
       </b-btn-group>
+      <b-btn-group>
+        <b-btn to="/privacy" variant="info"><b-icon-shield-check class="mr-2" />Privacy Policy</b-btn>
+      </b-btn-group>
     </b-jumbotron>
   </div>
 </template>
