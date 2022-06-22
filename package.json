@@ -1,37 +1,41 @@
 {
-  "name": "Cog",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@chenfengyuan/vue-qrcode": "^1.0.2",
-    "@nuxt/content": "^1.15.1",
-    "@nuxtjs/axios": "^5.13.6",
-    "bootstrap": "^4.6.1",
-    "bootstrap-vue": "^2.21.2",
-    "core-js": "^3.20.1",
-    "nuxt": "^2.15.8",
-    "pretty-bytes": "^5.6.0",
-    "turndown": "^7.1.1",
-    "turndown-plugin-gfm": "^1.0.2",
-    "xml2js": "^0.4.23"
-  },
-  "resolutions": {
-    "**/vue": "^2.6.0",
-    "**/webpack": "^4.36.0",
-    "**/jquery": "^3",
-    "**/consola": "*",
-    "**/popper.js": "^1.16.1"
-  },
-  "devDependencies": {
-    "@nuxtjs/moment": "^1.6.1",
-    "dart-sass": "^1.25.0",
-    "sass": "^1.45.1",
-    "sass-loader": "^10.1.1"
-  }
+    "name": "Cog",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "predev": "node iubenda.js",
+        "dev": "nuxt",
+        "prebuild": "npm run predev",
+        "build": "nuxt build",
+        "prestart": "npm run prebuild",
+        "start": "nuxt start",
+        "pregenerate": "npm run predev",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "@chenfengyuan/vue-qrcode": "^1.0.2",
+        "@nuxt/content": "^1.15.1",
+        "@nuxtjs/axios": "^5.13.6",
+        "bootstrap": "^4.6.1",
+        "bootstrap-vue": "^2.21.2",
+        "core-js": "^3.20.1",
+        "nuxt": "^2.15.8",
+        "pretty-bytes": "^5.6.0",
+        "turndown": "^7.1.1",
+        "turndown-plugin-gfm": "^1.0.2",
+        "xml2js": "^0.4.23"
+    },
+    "resolutions": {
+        "**/vue": "^2.6.0",
+        "**/webpack": "^4.36.0",
+        "**/jquery": "^3",
+        "**/consola": "*",
+        "**/popper.js": "^1.16.1"
+    },
+    "devDependencies": {
+        "@nuxtjs/moment": "^1.6.1",
+        "dart-sass": "^1.25.0",
+        "sass": "^1.45.1",
+        "sass-loader": "^10.1.1"
+    }
 }
