@@ -3,13 +3,9 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "predev": "node iubenda.js",
         "dev": "nuxt",
-        "prebuild": "npm run predev",
         "build": "nuxt build",
-        "prestart": "npm run prebuild",
         "start": "nuxt start",
-        "pregenerate": "npm run predev",
         "generate": "nuxt generate"
     },
     "dependencies": {

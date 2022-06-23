@@ -40,7 +40,7 @@
         </b-dropdown>
       </b-btn-group>
       <b-btn-group>
-        <b-btn to="/privacy" variant="info"><b-icon-shield-check class="mr-2" />Privacy Policy</b-btn>
+        <b-btn href="https://www.iubenda.com/privacy-policy/59859310" variant="info"><b-icon-shield-check class="mr-2" />Privacy Policy</b-btn>
       </b-btn-group>
     </b-jumbotron>
   </div>
