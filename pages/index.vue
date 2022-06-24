@@ -19,6 +19,11 @@
         <li class="list-inline-item">AC3</li>
         <li class="list-inline-item"><nuxt-link to="/features">and more...</nuxt-link></li>
       </ul>
+      <div class="d-block pb-2">
+        <a href="https://apps.apple.com/us/app/cog-kode54/id1630499622">
+          <img style="height: 40px;vertical-align: sub;" src="/masdl.svg" alt="Download on the Mac App Store">
+        </a>
+      </div>
       <b-btn-group>
         <b-btn to="/features" variant="info"><b-icon-info-circle-fill class="mr-2" />Features</b-btn>
         <b-btn to="/download" variant="success"><b-icon-download class="mr-2" />Download</b-btn>
