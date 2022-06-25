@@ -1,10 +1,12 @@
 <template>
   <div>
     <h1>Download Cog</h1>
-    <b-alert show variant="warning">The last version that works reliably on Mac OS X Mountain Lion is version <a href="https://cogcdn.cog.losno.co/Cog-3b628c398.zip">1148-g3b628c398</a>.</b-alert>
+    <b-alert show variant="warning">The last version that works on Mac OS X Mountain Lion is version <a href="https://cogcdn.cog.losno.co/Cog-3b628c398.zip">1148-g3b628c398</a>.</b-alert>
+    <b-alert show variant="warning">The last version that works on macOS Sierra is version <a href="https://cogcdn.cog.losno.co/Cog-ff44bc4d.zip">2405</a>.</b-alert>
         <a href="https://apps.apple.com/us/app/cog-kode54/id1630499622">
           <img style="height: 40px;vertical-align: sub;" src="/masdl.svg" alt="Download on the Mac App Store">
         </a>
+
 
     <section :id="`v.${item['sparkle:version']?item['sparkle:version']:item.enclosure['sparkle:version']}`" v-for="(item, index) in versions" :key="index" class="py-2">
       <h2>Version {{item["sparkle:version"]?item["sparkle:version"]:item.enclosure["sparkle:version"]}}</h2>
