@@ -16,15 +16,15 @@ title: Cog features
 *   Album artwork per track, both embedded and external, cached per unique image, in JPEG, PNG, GIF, WebP, HEIC, or AVIF format. HEIC requires macOS Mojave, while WebP requires Big Sur.
 *   Graphic equalizer
 *   Spectrum visualization in the toolbar
-*   Headphone or speaker virtual surround by HRIR covolution filter
-    *   Uses the [HeSuVi](https://sourceforge.net/projects/hesuvi/) HRIR format, in either WAV or Wavpack float format
-    *   A preset is built-in, but I supply the most useful set of presets [here](https://cogcdn.cog.losno.co/HeSuVi-hrir-basic.zip)
+*   Spatial Audio for supported devices, requires at least macOS Monterey
 
 Supported formats
 -----------------
 
 *   MP3 (including free format, up to 640kbps)
 *   WAV
+*   MPEG-4 container, including chapter support
+*   Matroska container, including chapter support
 *   AAC
     *   LC-AAC
     *   HE-AAC
@@ -37,6 +37,7 @@ Supported formats
 *   AC3
 *   Windows Media Audio
 *   DTS
+*   TrueHD
 *   HDCD
 *   TTA True Audio
 *   TAK (Tom's Lossless Audio Kompressor)
