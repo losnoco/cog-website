@@ -37,6 +37,9 @@
           <b-dropdown-item href="https://bitbucket.org/losnoco/cog">BitBucket</b-dropdown-item></b-dropdown>
       </b-btn-group>
       <b-btn-group>
+        <b-btn href="https://gitter.im/losnoco/cog" target="_blank" variant="secondary"><b-icon-chat-dots-fill class="mr-2" />Chat on Gitter</b-btn>
+      </b-btn-group>
+      <b-btn-group>
         <b-dropdown variant="success" right>
           <template slot="button-content">
             <b-icon-heart class="mr-2" /> Donate
