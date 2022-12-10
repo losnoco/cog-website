@@ -8,9 +8,9 @@ const genIndex = pug.compileFile(path.join(__dirname, '/src/template.pug'));
 
 
 (async() => {
-    var feed = (await axios.get("https://cog-cdn.b-cdn.net/mercury.json", {
+    var feed = (await axios.get("https://storage.bunnycdn.com/cog-ecdn/mercury.json", {
         params: {
-            "_": Date.now()
+            "AccessKey": process.env.BUNNY_RO_ACCESS_KEY
         }
     })).data
 
