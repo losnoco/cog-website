@@ -1,0 +1,29 @@
+{
+    "name": "cog-website-new",
+    "version": "1.0.0",
+    "description": "Cog website, 2023 version",
+    "scripts": {
+        "prebuild": "node genlocals.js",
+        "build": "parcel build"
+    },
+    "source": "src/index.html",
+    "repository": "https://github.com/losnoco/cog-website",
+    "author": "Kevin López Brante <kevin@kddlb.cl>",
+    "license": "MIT",
+    "private": false,
+    "dependencies": {
+        "@popperjs/core": "^2.11.6",
+        "axios": "^1.2.1",
+        "bootstrap": "^5.2.3",
+        "filesize": "^10.0.5",
+        "moment": "^2.29.4",
+        "parcel": "^2.8.1",
+        "parcel-reporter-static-files-copy": "^1.4.0"
+    },
+    "devDependencies": {
+        "@parcel/packager-raw-url": "2.8.1",
+        "@parcel/transformer-pug": "2.8.1",
+        "@parcel/transformer-sass": "2.8.1",
+        "@parcel/transformer-webmanifest": "2.8.1"
+    }
+}

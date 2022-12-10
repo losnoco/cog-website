@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-rounded: true;
+$primary: rgb(255,
+143,
+0);
+$secondary: #67614e;
+$font-family-sans-serif: "Inter",
+system-ui,
+-apple-system,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+"Noto Sans",
+"Liberation Sans",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+@import 'bootstrap/scss/bootstrap.scss';
+html,
+body {
+    scroll-behavior: initial;
+}
+
+header {
+    backdrop-filter: saturate(5) blur(20px);
+    -webkit-backdrop-filter: saturate(5) blur(20px);
+}

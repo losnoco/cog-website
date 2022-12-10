@@ -1,0 +1,200 @@
+doctype html
+html(lang="en")
+  head
+    title Cog
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    meta(data-hid='description' name='description' content='A free and open source audio player for macOS.')
+    meta(name='msapplication-TileColor' content='#ffffff')
+    meta(name='theme-color' content='#ffffff')
+    meta(property='og:url' content='https://cog.losno.co/')
+    meta(property='og:type' content='website')
+    meta(property='og:title' content='Cog')
+    meta(property='og:description' content='A free and open source audio player for macOS.')
+    meta(property='og:image' content='https://cog.losno.co/hero.png')
+    meta(name='twitter:card' content='summary_large_image')
+    meta(property='twitter:domain' content='cog.losno.co')
+    meta(property='twitter:url' content='https://cog.losno.co/')
+    meta(name='twitter:title' content='Cog')
+    meta(name='twitter:description' content='A free and open source audio player for macOS.')
+    meta(name='twitter:image' content='https://cog.losno.co/hero.png')
+    link(rel='apple-touch-icon' sizes='180x180' href='/static/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='/static/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='/static/favicon-16x16.png')
+    link(rel='manifest' href='/static/site.webmanifest')
+    link(rel="stylesheet", href="style.scss")
+    script(async defer src="https://buttons.github.io/buttons.js")
+  body
+    header.pb-3.mb-4.border-bottom.sticky-top.bg-white.bg-opacity-50
+        .container.pt-3
+            .d-flex.align-items-center.text-dark.text-decoration-none
+                img(src="/static/favicon-32x32.png" alt="Cog logo").me-1
+                span.fs-4.fw-bold.text-primary Cog
+                span.ms-auto
+                    a.github-button(href="https://github.com/losnoco/cog" data-size="large" data-show-count="true" aria-label="Star losnoco/cog on GitHub") Star
+                .dropdown.ms-auto
+                    a.btn.btn-success.dropdown-toggle.btn-sm(href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false") Donate
+                    ul.dropdown-menu
+                        li
+                            a.dropdown-item(href="https://paypal.me/kode54" target="_blank") PayPal 
+                        li
+                            a.dropdown-item(href="https://patreon.com/kode54" target="_blank") Patreon 
+                        li
+                            a.dropdown-item(href="https://ko-fi.com/kode54" target="_blank") Ko-fi 
+                        li
+                            a.dropdown-item(href="https://liberapay.com/kode54" target="_blank") LiberaPay 
+
+    .container.py-3
+        .h
+        .p-3.mb-4.bg-light.rounded-3 
+            .container-fluid.py-3 
+                h2.pb-3 An audio player for macOS. Free and open source.
+                div.float-end
+                    a(href="https://apps.apple.com/us/app/cog-kode54/id1630499622")
+                        img(src="/static/masdl.svg", alt="Download on the Mac App Store") 
+                a(href=latest.Enclosure.URL).btn.btn-success.btn-lg Download latest version #{latest.Version} 
+                    span.text-white.text-opacity-75.fw-light= latest.Enclosure.LengthFmt
+                div.pt-3 Published on #{latest.PubDateFmt}
+                ul.list-unstyled.pb-3!= latest.Description
+                a(href="#older").btn.btn-primary.btn Download older versions
+
+                
+        h2 Features 
+        ul
+            li Gapless playback
+            li Automatic updates
+            li Last.fm support
+            li Global hotkeys
+            li Desktop notifications
+            li Shuffle, both albums and tracks
+            li Repeat single track, album or whole playlist
+            li
+                | Playback from HTTP(S) sources, both livestreams and hosted files
+                ul
+                    li Supports Apple&apos;s HTTP Live Streaming (HLS) using FFmpeg
+                    li
+                        | Supports live metadata updates of continuous streaming servers, including Shoutcast, Icecast, Ogg Vorbis comments, and timed ID3v2 packets, where employed by the streamer
+            li CUE Sheet support, including embedded CUE Sheets in several formats
+            li
+                | Album artwork per track, both embedded and external, cached per unique image, in JPEG, PNG, GIF, WebP, HEIC, or AVIF format. HEIC requires macOS Mojave, while WebP requires Big Sur.
+            li Graphic equalizer
+            li Spectrum visualization in the toolbar
+            li Spatial Audio for supported devices, requires at least macOS Monterey
+        h2 Supported formats
+        ul
+            li MP3 (including free format, up to 640kbps)
+            li WAV
+            li MPEG-4 container, including chapter support
+            li Matroska container, including chapter support
+            li
+                | AAC
+                ul
+                    li LC-AAC
+                    li HE-AAC
+                    li HE-AACv2
+                    li xHE-AAC (USAC)
+            li Apple Lossless (ALAC)
+            li FLAC (including OggFLAC)
+            li Ogg Opus
+            li Ogg Vorbis
+            li AC3
+            li Windows Media Audio
+            li DTS
+            li TrueHD
+            li HDCD
+            li TTA True Audio
+            li TAK (Tom&apos;s Lossless Audio Kompressor)
+            li Monkey&apos;s Audio (APE)
+            li APL (APE Linking File)
+            li TwinVQ
+            li RealAudio
+            li ATRAC3
+            li Musepack
+            li WavPack, including DSD support
+            li Interchange File Format (IFF) including DSDIFF
+            li DSD Stream File (DFF)
+            li Wideband Single-bit Data (WSD)
+            li
+                | MIDI
+                ul
+                    li
+                        | SoundFont support via 
+                        a(href='http://www.un4seen.com/bass.html') BASSMIDI
+                    li
+                        | FM synthesis via 
+                        a(href='https://nukeykt.retrohost.net/') Nuked OPL3
+                    li
+                        | Audio Unit synthesizer support, including Apple&apos;s DLSMusicDevice and 
+                        a(href='https://www.roland.com/us/products/rc_sound_canvas_va/') Roland Sound Canvas VA
+            li Shorten
+            li
+                | Tracker music via 
+                a(href='https://lib.openmpt.org/libopenmpt/') libopenmpt
+                |  (
+                a(href='https://openmpt.org/features#modules') supported formats
+                | ).
+            li SID
+            li
+                | Game music
+                ul
+                    li GBS (Game Boy)
+                    li NSF (Nintendo)
+                    li SPC (Super Nintendo)
+                    li VGM (Master System, Genesis/Mega Drive, Game Gear, etc)
+                    li VGZ (compressed variant of the above)
+                    li PSF (PlayStation)
+                    li SSF (Saturn)
+                    li DSF (Dreamcast)
+                    li QSF (Q-Sound)
+                    li USF (Nintendo 64)
+                    li NCSF (Nintendo DS)
+                    li 2SF (Nintendo DS)
+                    LI Organya (Cave Story)
+                    li
+                        | Streamed music via 
+                        a(href='https://vgmstream.org') vgmstream
+            li
+                | Archive files
+                ul
+                    li ZIP
+                    li RAR
+                    li GZip
+                    li 7Z
+
+        h2#older.py-3 Download older versions
+        
+        each item, index in feed 
+            section(id=`v${item.Version}`).pb-3
+                h3 Version #{item.Version}
+                a(href=item.Enclosure.URL).btn.btn-success Download version #{item.Version} 
+                    span.text-white.text-opacity-75.fw-light= item.Enclosure.LengthFmt
+                div.pt-3 Published on #{item.PubDateFmt}
+
+                ul.list-unstyled.pb-3!= item.Description
+        
+        section#oldest.border-top
+            .btn-group-vertical
+                a(href="https://cogcdn.cog.losno.co/Cog-3b628c398.zip").btn.btn-danger.text-start Download version 1148 
+                    span.text-white.text-opacity-75.fw-light for Mountain Lion
+                a(href="https://cogcdn.cog.losno.co/Cog-ff44bc4d.zip").btn.btn-danger.text-start Download version 2405 
+                    span.text-white.text-opacity-75.fw-light for Sierra
+    footer.footer.mt-auto.py-3.bg-light
+        .container
+            .row
+                .col-md-8.col-12
+                    span.text-muted
+                    | &copy; 2021-2022 
+                    a(href='https://kode54.net') Christopher Snowhill
+                    | . 
+                    a(href='https://cogx.org/') Originally developed
+                    |  by 
+                    a(href='http://vspader.com/') Vincent Spader
+                    | .
+                .text-right.col-md-4.col-12
+                    | Design by 
+                    a(href='https://kddlb.com') Kevin L&oacute;pez
+                    | .
+                    a(href='https://losno.co').ps-2
+                        img(src='https://losno.co/lsc2021.svg' alt='LoSnoCo' style='height:16pt')
+    script(type="module" src="index.js") 
+
