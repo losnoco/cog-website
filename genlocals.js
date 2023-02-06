@@ -22,8 +22,10 @@ const genIndex = pug.compileFile(path.join(__dirname, '/src/template.pug'));
         return item
     })
 
-    latest = feed.shift()
+    var latest = feed.shift()
 
-    fs.writeFileSync(path.join(__dirname, '/src/index.html'), genIndex({ latest, feed }))
+    var year = moment().format('YYYY')
+
+    fs.writeFileSync(path.join(__dirname, '/src/index.html'), genIndex({ latest, feed, year }))
 
 })()
