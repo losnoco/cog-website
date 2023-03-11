@@ -8,11 +8,7 @@ const genIndex = pug.compileFile(path.join(__dirname, '/src/template.pug'));
 
 
 (async() => {
-    var feed = (await axios.get("https://storage.bunnycdn.com/cog-ecdn/mercury.json", {
-        params: {
-            "AccessKey": process.env.BUNNY_RO_ACCESS_KEY
-        }
-    })).data
+    var feed = (await axios.get("https://cogcdn.cog.losno.co/mercury.json")).data
 
     feed = feed.map(item => {
         item.PubDateFmt = moment(item.PubDate).format("dddd, MMMM Do YYYY, h:mm:ss a")
