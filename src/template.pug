@@ -25,8 +25,10 @@ html(lang="en")
     link(rel="stylesheet", href="style.scss")
     script(async defer src="https://buttons.github.io/buttons.js")
   body
-    .d-block.px-3.py-2.text-center.text-bold.bg-dark
+    .d-block.px-3.py-2.text-center.text-bold.bg-dark.sticky-top
       a.text-white.text-decoration-none(href='https://kode54.net/blog/cog-mac-hiatus/') Development of Cog is in hiatus for the time being. Click to read more.
+        iframe(src="https://www.gofundme.com/f/help-me-get-a-replacement-mac-mini/widget/medium?utm_source=cog.losno.co&utm_medium=referral&utm_campaign=widget" width="100%" height="212" scrolling="no" frameborder="0" allowtransparency="true")
+
     header.pb-3.mb-4.border-bottom.sticky-top
         .container.pt-3
             .d-flex.align-items-center.text-dark.text-decoration-none
@@ -68,6 +70,7 @@ html(lang="en")
                 div.pt-3 Published on #{latest.PubDateFmt}
                 ul.list-unstyled.pb-3!= latest.Description
                 a(href="#older").btn.btn-primary.btn Download older versions
+
 
                 
         h2 Features 
