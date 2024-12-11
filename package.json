@@ -1,29 +1,33 @@
 {
-    "name": "cog-website-new",
-    "version": "1.0.0",
-    "description": "Cog website, 2023 version",
-    "scripts": {
-        "prebuild": "node genlocals.js",
-        "build": "parcel build"
-    },
-    "source": "src/index.html",
-    "repository": "https://github.com/losnoco/cog-website",
-    "author": "Kevin López Brante <kevin@kddlb.cl>",
-    "license": "MIT",
-    "private": false,
-    "dependencies": {
-        "@popperjs/core": "^2.11.6",
-        "axios": "^1.2.1",
-        "bootstrap": "https://github.com/twbs/bootstrap.git#d9037ba77f2cc43139659056ac55387ad876854d",
-        "filesize": "^10.0.5",
-        "moment": "^2.29.4",
-        "parcel": "^2.8.1",
-        "parcel-reporter-static-files-copy": "^1.4.0"
-    },
-    "devDependencies": {
-        "@parcel/packager-raw-url": "2.8.1",
-        "@parcel/transformer-pug": "2.8.1",
-        "@parcel/transformer-sass": "2.8.1",
-        "@parcel/transformer-webmanifest": "2.8.1"
-    }
+  "name": "cog-website-new",
+  "version": "1.0.0",
+  "description": "Cog website, 2023 version",
+  "scripts": {
+    "prebuild": "node genlocals.js",
+    "build": "parcel build"
+  },
+  "source": "src/index.html",
+  "repository": "https://github.com/losnoco/cog-website",
+  "author": "Kevin López Brante <kevin@kddlb.cl>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "axios": "^1.2.1",
+    "bootstrap": "https://github.com/twbs/bootstrap.git#d9037ba77f2cc43139659056ac55387ad876854d",
+    "filesize": "^10.0.5",
+    "moment": "^2.29.4",
+    "parcel": "^2.13.2",
+    "parcel-reporter-static-files-copy": "^1.4.0"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.13.2",
+    "@parcel/transformer-pug": "^2.13.2",
+    "@parcel/transformer-sass": "^2.13.2",
+    "@parcel/transformer-webmanifest": "^2.13.2",
+    "svgo": "^3.3.2"
+  },
+  "trustedDependencies": [
+    "@parcel/watcher"
+  ]
 }
