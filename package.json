@@ -14,7 +14,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "axios": "^1.2.1",
-    "bootstrap": "https://github.com/twbs/bootstrap.git#d9037ba77f2cc43139659056ac55387ad876854d",
+    "bootstrap": "^5.3.3",
     "filesize": "^10.0.5",
     "moment": "^2.29.4",
     "parcel": "^2.13.2",
